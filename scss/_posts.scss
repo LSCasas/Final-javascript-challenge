@@ -1,0 +1,257 @@
+.posts {
+   flex: 4;
+}    
+
+ 
+
+
+.tag-header {
+   background-color: none;
+   overflow: hidden;
+   margin: 0.4rem;
+   padding: 0.5rem 0.75rem;
+   border-radius: $border-radius-1;
+   &:hover {
+      color: rgba($blue-700, 1);
+      background-color: white;
+      cursor: pointer;
+   }
+}
+.post-section {
+   margin: 0 0 0.5rem 0;
+   padding: 0;
+   .post-image {
+      width: 100%;
+      height: auto;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+   .post-content {
+      padding: 1rem;
+   }
+   .post-title {
+      align-items: center;
+      margin-bottom: 0.75rem;
+      .post-meta {
+         display: flex;
+         align-items: center;
+         .post-author {
+            position: absolute;
+            >img.avatar {
+               &:first-child {
+                  border-radius: $border-radius-1;
+                  height: 32px;
+               }
+               &:not(:first-child) {
+                  top: 100%;
+                  left: 100%;
+                  transform: translate(-75%, 50%);
+                  border-radius: $border-radius-50;
+                  border-color: #fff;
+                  border-width: 2px;
+                  height: 18px;
+               }
+               &.radius-50 {
+                  border-radius: $border-radius-50;
+               }
+            }
+            &:hover {
+               cursor: pointer;
+            }
+         }
+         .post-title-info {
+            margin-left: 50px;
+            font-size: 0.8rem;
+            color: rgba($state-700, 1);
+            &:hover {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+   .post-indention {
+      .title {
+         font-weight: 700;
+         margin-bottom: 0.2rem;
+         font-size: 1.25rem;
+      }
+      .title:hover {
+         cursor: pointer;
+         color: $blue-700;
+      }
+      .tags {
+         display: flex;
+         flex-wrap: wrap;
+         font-size: 0.8rem;
+         margin-bottom: 0.5rem;
+         .tag {
+            margin: 0 0.1rem 0 0;
+            padding: 0.2rem;
+            span {
+               color: rgba($state-700, 1);
+            }
+         }.tag:hover {
+            cursor: pointer;
+            background-color: $gray-50;
+         }
+         .tag-discuss, .tag-vim, .tag-webdev {
+            border: 1px solid transparent;
+            color: rgba($purple-400, 1);
+            &:hover {
+               background-color: rgba($purple-400, 0.2);
+               border: 1px solid rgba($purple-400, 1.2);
+            }
+         }
+         .tag-weeklyretro, .tag-python {
+            border: 1px solid transparent;
+            color: rgba($cyan-300, 1);
+         
+            &:hover {
+               background-color: rgba($cyan-300, 0.2);
+               border: 1px solid rgba($cyan-300, 1.2);
+            }
+         }
+         .tag-productivity, .tag-macos, .tag-terminal, .tag-cheatsheet, .tag-development, .tag-developers {
+            border: 1px solid transparent;
+            color: rgba($blue-700, 1);
+         
+            &:hover {
+               background-color: rgba($blue-700, 0.2);
+               border: 1px solid rgba($blue-700, 1.2);
+            }
+         }
+         .tag-github, .tag-testing {
+            border: 1px solid transparent;
+            color: rgba($green-500, 1);
+         
+            &:hover {
+               background-color: rgba($green-500, 0.2);
+               border: 1px solid rgba($green-500, 1.2);
+            }
+         }
+         .tag-devops, .tag-career {
+            border: 1px solid transparent;
+            color: rgba($lime-500, 1);
+
+            &:hover {
+               background-color: rgba($lime-500, 0.2);
+               border: 1px solid rgba($lime-500, 1.2);
+            }
+         }
+         .tag-beginners, .tag-cli, .tag-linux, .tag-react, .tag-welcome {
+            border: 1px solid transparent;
+            color: rgba($state-700, 1);
+         
+            &:hover {
+               background-color: rgba($state-700, 0.2);
+               border: 1px solid rgba($state-700, 1.2);
+            }
+         }
+         .tag-programming {
+            border: 1px solid transparent;
+            color: rgba($red-700, 1);
+         
+            &:hover {
+               background-color: rgba($red-700, 0.2);
+               border: 1px solid rgba($red-700, 1.2);
+            }
+         }
+         .tag-tutorial, .tag-javascript {
+             border: 1px solid transparent;
+             color: rgba($yelow-300, 1);
+         
+             &:hover {
+                background-color: rgba($yelow-300, 0.2);
+                border: 1px solid rgba($yelow-300, 1.2);
+             }
+          }
+         .tag-java, .tag-tailwindcss {
+            border: 1px solid transparent;
+            color: rgba($orange-600, 1);
+
+            &:hover {
+               background-color: rgba($orange-600, 0.2);
+               border: 1px solid rgba($orange-600, 1.2);
+            }
+         }
+         .tag-api {
+            border: 1px solid transparent;
+            color: rgba($pink-500, 1);
+         
+            &:hover {
+               background-color: rgba($pink-500, 0.2);
+               border: 1px solid rgba($pink-500, 1.2);
+            }
+         }
+      }
+      .bottom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         font-size: 0.8rem;
+         .details {
+            display: flex;
+            height: 36px;
+            .reactions {
+               display: flex;
+               align-items: center;
+               height: 100%;
+               margin: 0;
+               padding: 0.25rem 0.75rem;
+               .reactions-icons {
+                  display: flex;
+                  flex-direction: row-reverse;
+                  align-items: center;
+                  .reaction-icon {
+                     display: flex;
+                     background-color: $gray-100;
+                     border: 2px solid white;
+                     border-radius: $border-radius-50;
+                     margin-right: -0.75rem;
+                     overflow: hidden;
+                  }
+               }
+               .reactions-counter {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  padding: 0 0.4rem;
+                  margin-left: 1rem;
+               }
+            }
+            .reactions:hover {
+               cursor: pointer;
+               background-color: $gray-100;
+            }
+            .comments {
+               display: flex;
+               align-items: center;
+               height: 100%;
+               margin: 0;
+               padding: 0.25rem 0.75rem;
+            }
+            .comments:hover {
+               cursor: pointer;
+               background-color: $gray-100;
+            }
+         }
+         .save {
+            display: flex;
+            align-items: center;
+            .icon {
+               padding: 0.4rem;
+               margin-left: 0.4rem;
+               border-radius: $border-radius-1;
+               &:hover {
+                  cursor: pointer;
+                  background-color: $indigo-50;
+               }
+            }
+         }
+      }
+   }
+}
+.icon-bookmark:hover {
+   fill: rgba($blue-700, 1);
+}

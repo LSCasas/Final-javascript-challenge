@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: rgb(23, 23, 23);
+}
+
+.container_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_1>.registration__logo {
+    margin: 3rem 0 1rem 0;
+    width: auto;
+    height: 48px;
+}
+
+.container_1>.register_title {
+    font-size: 1.875rem;
+    margin-top: 1rem;
+    color: rgb(23, 23, 23);
+}
+
+.container_1>.description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 1.35rem;
+}
+
+.link_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: white;
+}
+
+.link_container>.apple,
+.facebook,
+.forem,
+.github,
+.twitter {
+    display: flex;
+    border: 1px solid rgb(212, 212, 212);
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    margin-bottom: 1.25rem;
+    padding-left: 10px;
+}
+
+.apple:hover,
+.facebook:hover,
+.forem:hover,
+.github:hover,
+.twitter:hover {
+    border: 1px solid rgb(207, 201, 201);
+    background-color: rgb(51, 48, 48);
+}
+
+.apple_text,
+.facebook_text,
+.forem_text,
+.github_text,
+.twitter_text {
+    text-align: center;
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.separator {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.registration_hr {
+    height: 1px;
+    margin: 1.5rem auto;
+    background-color: rgb(229, 229, 229);
+    border: none;
+    width: 30%;
+}
+
+.hr_label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 1rem;
+    color: rgb(64, 64, 64);
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+
+.email,
+.password {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-size: 1.50rem;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.email_text {
+    margin-bottom: 1rem;
+    margin-right: 500px;
+}
+
+.password_text {
+    margin-bottom: 1rem;
+    margin-right: 460px;
+}
+
+.input_email,
+.input_password {
+    line-height: 1.5;
+    padding: calc(0.5em - 1.5px) 0.5em;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 30%;
+    resize: vertical;
+    border-radius: 0.375rem;
+}
+
+.input_email:hover,
+.input_password:hover {
+    border: 1px solid rgb(207, 201, 201);
+}
+
+.input_email:focus,
+.input_password:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgb(59, 73, 223);
+}
+
+.forgot_remember {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 2.20rem;
+}
+
+.remember_text,
+.remeber_box {
+    margin-right: 10px;
+}
+
+.forgot_link {
+    color: rgb(59, 73, 223);
+    margin-left: 200px;
+}
+
+.remember_text,
+.forgot_link {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.remember_box {
+    width: 1.125em;
+    height: 1.125em;
+    cursor: pointer;
+    background-position: center center;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(212, 212, 212);
+    border-radius: 0.375rem;
+    transition: all cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+}
+
+.button_terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button_terms>button {
+    width: 30%;
+    height: 50px;
+    margin-bottom: 2rem;
+    border-color: transparent;
+    background-color: rgb(62, 76, 230);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button_terms>button:hover {
+    background-color: rgb(47, 58, 178);
+    border-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #f9f9f9;
+    z-index: 1;
+}
+
+
+.button_terms>p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(115, 115, 115);
+}
+
+.form_final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+}
+
+.end_footer {
+    background: rgb(229, 229, 229);
+    color: rgb(64, 64, 64);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.footer_description {
+    margin: 20px 0 15px 0;
+}
+
+.ml-2 {
+    margin-left: 0.7rem;
+}
+
+.dot {
+    height: 0.25rem;
+    width: 0.25rem;
+    background-color: #575757;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.end_footer>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .link_container>.apple,
+    .link_container>.facebook,
+    .link_container>.forem,
+    .link_container>.github,
+    .link_container>.twitter {
+        width: 90%;
+    }
+
+    .registration_hr,
+    .hr_label {
+        width: 90%;
+    }
+
+    .input_email,
+    .input_password {
+        width: 90%;
+    }
+
+    .email_text {
+        margin-bottom: 1rem;
+        margin-right: 260px;
+    }
+
+    .password_text {
+        margin-bottom: 1rem;
+        margin-right: 220px;
+    }
+
+    .forgot_remember>.forgot_link {
+        margin-left: 100px;
+    }
+
+    .button_terms>button {
+        width: 90%;
+
+    }
+
+}

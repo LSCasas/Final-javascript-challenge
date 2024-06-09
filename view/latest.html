@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>DEV Community</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico">
+</head>
+<body>
+
+    <!-- Header-->
+
+    <header class="header">
+        <div class="header-container">
+            <span class="inline-block d-md-none mr-2">
+                <button class="btn-hamburger mx-2 my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-labelledby="ak60fy7nypgqj4u6e6oam7guhmm7lo0e">
+                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                    </svg>
+                </button>
+            </span>
+            <div class="site-logo">
+                <img class="site-logo-img"
+                    src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                    alt="DEV Community">
+            </div>
+            <div class="header-search">
+                <div class="fields">
+                    <div class="field flex-1">
+                        <input class="textfield" type="text" placeholder="Search..."  id="category-filter">
+                        <button class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"
+                                class="icon" focusable="false">
+                                <path
+                                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex items-center h-100 ml-auto">
+                <button class="btn-icon d-sm-none position-relative mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="icon"
+                        focusable="false">
+                        <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="d-flex mr-2">
+                    <span class="d-none d-md-block">
+                        <a href="" class="link link-block mr-2 ml-auto">
+                            Log in
+                        </a>
+                    </span>
+                    <a href="" class="my-auto create-account">
+                        Create account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container m-md-2">
+        
+        <!--Aside-->
+
+        <aside class="asideods d-none d-md-block mx-2 crayons-layout__sidebar-left">
+           
+            <nav class="mb-4ods mt-4ods">
+                <ul>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Home.svg" alt="Home" width="24" height="24">
+                            </span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Podcast.svg" alt="Podcast" width="24" height="24">
+                            </span>
+                            Podcast
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Videos.svg" alt="Videos" width="24" height="24">
+                            </span>
+                            Videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Tags.svg" alt="Tags" width="24" height="24">
+                            </span>
+                            Tags
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/FAQ.svg" alt="FAQ" width="24" height="24">
+                            </span>
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/ForemShop.svg" alt="Forem Shop" width="24" height="24">
+                            </span>
+                            Forem Shop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/AdvertiseonDev.svg" alt="Advertise on DEV" width="24" height="24">
+                            </span>
+                            Advertise on DEV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/About.svg" alt="About" width="24" height="24">
+                            </span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Contact.svg" alt="Contact" width="24" height="24">
+                            </span>
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/Guides.svg" alt="Guides" width="24" height="24">
+                            </span>
+                            Guides
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/SoftwareComparasions.svg" alt="Software comparisons" width="24" height="24">
+                            </span>
+                            Software comparisons 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mb-4ods mt-4ods">
+                <h2 class="crayons-subtitle-3 py-2 pl-3">Other</h2>
+                <ul>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/CodeofConduct.svg" alt="Code of Conduct">
+                            </span>
+                            Code of Conduct 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/PrivacyPolicy.svg" alt="Privacy Policy">
+                            </span>
+                            Privacy Policy 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="c-link c-link--blockods">
+                            <span class="c-link__icon">
+                                <img src="../img/svgs/TermsofUse.svg" alt="Terms of use">
+                            </span>
+                            Terms of use 
+                        </a>
+                    </li>
+                </ul>
+                <div class="flex justify-start mb-4ods">
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/github.svg" alt="github">
+                    </a>
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/twitch.svg" alt="twitch">
+                    </a>
+                    <a href="#" class="c-link c-link--icon-alone c-link--blockods">
+                        <img src="../img/svgs/mastodon.svg" alt="mastodon">
+                    </a>
+                </div>
+                <nav class="mb-6ods">
+                    <h3 class="crayons-subtitle-3 p-2">Popular Tags</h3>
+                    <div class="overflow-y-auto">
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #webdev
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #javascript
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #beginners
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #programming
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #tutorial
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #react
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #python
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #productivity
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #devops
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #aws
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #opensource
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #ai
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #discuss
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #css
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #node
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #news
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #career
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #typescript
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #html
+                            </a>
+                        </div>
+                        <div style="max-height: 42vh" class="py-3 pl-3">
+                            <a href="" class="c-link c-link--blockods">
+                                #database
+                            </a>
+                        </div>
+                        
+                    </div>
+                </nav>
+                <div>
+                    <div>
+                        <div class="myCardInfo">
+                            <div class="crayons-sponsorship__header relative">
+                                <div class="crayons-sponsorship__title">
+                                    DEV Community
+                                </div>
+                                <a href="#" class="Mythreepoints">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3fq3lq15u66daw3ik8yqahtqndzye1g" class="crayons-icon pointer-events-none"><title id="a3fq3lq15u66daw3ik8yqahtqndzye1g">Dropdown menu</title>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p>
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--GkDXbK0b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oky7tpxe4z0f8ksng5ta.png" 
+                                alt="Dark Mode"  loading="lazy" id="DarkModeImg">
+                            </p>
+                            <h2>
+                                Life is too short to browse without 
+                                <a href="#" class="MyLynk">dark mode</a>
+                                .
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <div></div>
+                </div>
+                <footer class="fs-s mt-6 sidebar-footer">
+                    <p>
+                        <a class="c-link c-link--branded" href="#">DEV Community</a>
+                        A constructive and inclusive social network for software developers. With you every step of your journey.
+                    </p>
+                    <p class="mt-4ods">
+                        Built on 
+                        <a href="#" class="c-link c-link--branded">Forem</a>
+                        — the 
+                        <a href="#" class="c-link c-link--branded">open source</a>
+                        software that powers 
+                        <a href="#" class="c-link c-link--branded">DEV</a>
+                         and other inclusive communities.
+                    </p>
+                    <p class="mt-4ods">
+                        Made with love and 
+                        <a href="" class="c-link c-link--branded">Ruby on Rails</a>. 
+                        DEV Community
+                        <span>©</span>
+                        2016 - 2024.
+                    </p>
+                </footer>
+            </nav>
+        </aside>
+
+        <!-- Main -->
+
+        <main class="posts">
+            <header>
+                <nav>
+                    <ul class="d-flex">
+                        <li class="tag-header"><a href="../index.html" class="no-color">Relevant</a></li>
+                        <li class="tag-header"><b><a href="latest.html" class="no-color">Latest</a></b></li>
+                        <li class="tag-header"><a href="top.html" class="no-color">Top</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Card post section with img-->
+            <div class="card post-section">
+                
+            </div>
+
+            <div id="wrapper">
+                
+            </div>
+
+
+  
+        </main>
+
+        <!-- Sidebar-->
+
+        <div class="sidebar d-none d-lg-block mx-2">
+           
+            <!-- Primera seccion -->
+            <section class="container1">
+                <div class="listSidebar">
+                    <div class="firstPost">
+                        <h3>
+                            <a href="">#discuss</a>
+                        </h3>
+                        <p>Discussion threads targeting the whole community</p>
+                    </div>
+                    <div class="postsList">
+                        <div  class="linkPrim">
+                            <a href="https://desaf-o-js.vercel.app/views/detalleCard.html?key=-NxLS0YpFL3MbwAibdxe">
+                                What was your win this week?
+                            </a>
+                            <div class="secundaryLink">47 comments</div>
+                        </div>
+                        <div href="" class="linkPrim">
+                            <a href=" https://desaf-o-js.vercel.app/views/detalleCard.html?key=-NxLS0YpFK3MbwAibdxe">prueba Post</a>
+                            <div class="secundaryLink">47 comments</div>
+                        </div>
+                        <div href="" class="linkPrim">
+                            <a href="https://desaf-o-js.vercel.app/views/detalleCard.html?key=-NxLSmBHzQv1rO810ZOe" > Let’s Get Dynamic! Ideas for the Netlify Dynamic Site Challenge</a>
+                            <div class="secundaryLink">47 comments</div>
+                        </div>
+                        <div href="" class="linkPrim">
+                            <a href="https://desaf-o-js.vercel.app/views/detalleCard.html?key=-NxP_mYNn7bDXqmb9ZYh">El futuro de la IA</a>
+                            <div class="secundaryLink">47 comments</div>
+                        </div>
+                        <div href="" class="linkPrim">
+                            <a href="https://desaf-o-js.vercel.app/views/detalleCard.html?key=-NxU6eUSMawTZFwsGLVZ"> Data analytics vs data science </a>
+                            <div class="secundaryLink">47 comments</div>
+                        </div>
+                    </div>
+
+                </div>
+           </section>
+           <!-- Segunda Sección -->
+           <section class="container1 gap">
+            <div class="listSidebar">
+                <div class="firstPost">
+                    <h3>
+                        <a href="">
+                            #watercooler
+                        </a>
+                    </h3>
+                    <p> Light, and off-topic conversation.</p>
+                </div>
+                <div class="postsList">
+                    <div href="" class="linkPrim">
+                        <a>Caption This! 🤔💭</a>
+                        <div class="secundaryLink">6 comments</div>
+                    </div>    
+                </div>
+            </section>
+
+             <!-- Tercera seccion -->
+            <section class="container2 gap">
+                <div class="title">
+                    <h4>trending guides/resources</h4>
+                </div>
+                <div>
+                    <div class="linkPrim">
+                        <a href="">The future of frontend development</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">GitHub Readme: Responsive? 🤔 Animated? 🤯 Light and dark modes? 😱 You bet! 💪🏼</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">10 Programming Languages Worth Learning in 2024</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">✨ Top 5 Underrated Open Source Projects that no one talks about 🫵🤐</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">What is the ideal Tech stack to build a website in 2024? 👨‍💻</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Optimizing SQL Queries by 23x!!!</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Modern Data Engineering RoadMap - 2024</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Git Good: Best Practices for Branch Naming and Commit Messages</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">So I completed Replit's free 100 Days of Python course</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">From Next.js to Rails then Elixir: My journey through React.js burnout</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">UUID in PostgreSQL</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">1 billion rows challenge in PostgreSQL and ClickHouse</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">S.O.L.I.D: The 5 Golden Rules to Level Up Your Coding Skills</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Cuarta seccion -->
+            <section class="container2 gap">
+                 
+                 <div class="title">
+                    <h4>recently queried</h4>
+                </div>
+                <div>
+                    <div class="linkPrim">
+                        <a href="">Programming Discord</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href=""> Dino Tutorial</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href=""> Clean Architecture</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Sublime Text vs Vscode</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Strikethrough Text Twitter</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">GCC for Windows</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Django Allauth</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Best VSCode Themes</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Landing Page Template</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Free Apis</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Line-height CSS</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">Spotify Shuffle Sucks</a>
+                    </div>
+                    <div class="linkPrim">
+                        <a href="">JavaScript Reverse String</a>
+                    </div>
+                </div>
+            </section>
+       </div>
+
+    </section>
+    <script src="../js/latest.js"></script>
+</body>
+</html>

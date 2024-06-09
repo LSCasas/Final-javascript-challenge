@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>New Post</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"/>
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />   
+</head>
+<body class="body-form">
+    <header class="header-form">
+        <div class="header-container inline-block">
+            <div class="site-logo">
+                <img class="site-logo-img"
+                    src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                    alt="DEV Community">
+            </div>
+            <div class="header-title">
+                <h3 class="crayons-subtitle-3 p-2">Create Post</h3>
+            </div>
+            <div class="d-flex col justify-content-end">
+                <div class="d-flex mr-2 col-12 col-md-7 justify-content-end pt-2">
+                    <span class="">
+                        <a href="" class="links-new-posts">
+                            <b>Edit</b>
+                        </a>
+                        <a href="" class="links-new-posts">
+                            Preview
+                        </a>
+                    </span>
+                </div>
+                <div class="d-flex col-md-4 justify-content-end">
+                    <span class=""> 
+                        <button class="btn-styles p-1" id="btn-close">
+                            <img src="../img/svgs/cancel.svg" alt="Software comparisons">
+                        </button>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <form id="form-data" class="m-0">
+        <div class="row justify-content-between p-3 m-0">
+            <div class="col-sm-12 offset-md-1 col-md-8 card-form-top">
+                <div class="row p-0 mx-4">
+                    <input class="col-3 input-tags my-4" type="text" placeholder="Photo" name="img">
+                    <input class="title-form" type="text" placeholder="New post title here..." name="title" id="idTitle" >
+                    <div class="row d-flex justify-content-start">
+                        <div id="labelContainer">
+                        </div>
+                        <input class="input-tags" type="text" placeholder="Add up to 4 tags" name="tags" id="textInput">
+                    </div>
+                    <div class="reaccions my-4">
+                        <label class="col-2"> <b>Reaccions:</b> </label>
+                        <input class="input-tags col-4" type="number" min="1" placeholder="reaction number" name="reactions" >
+                        <label class="col-2"> <b>Rating:</b> </label>
+                        <input class="input-tags col-3" type="number" min="1" max="10" placeholder="rating number" name="rating" >
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 offset-md-1 col-md-8 card-form-btn my-2">
+                <div class="row">
+                    <div class="d-flex col-10 gap-1">
+                        <button class="btn-styles">
+                            <img src="../img/svgs/B.svg" alt="Software comparisons"> 
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/italicImg.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/linksImg.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/numList.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/pointList.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/heading.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/quote.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/code.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/codeBlock.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/embed.svg" alt="Software comparisons">
+                        </button>
+                        <button class="btn-styles">
+                            <img src="../img/svgs/img.svg" alt="Software comparisons">
+                        </button>
+                    </div>
+                    <div class="d-flex col-2 justify-content-end">
+                        <button class="btn-styles">
+                            <img src="../img/svgs/others.svg" alt="Software comparisons" >
+                        </button>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-12 offset-md-1 col-md-8 card-form-bot form-floating ">
+                <input class="parrafo-form py-4 mx-4" placeholder="Write your post content here..." name="text" id="idParrafo">
+                <div class="col d-flex justify-content-between my-2 mx-4 gap-3" >
+                    <input class="col-3 input-tags" type="text" placeholder="Avatar-photo" name="avatar">
+                    <input class="col-3 input-tags" type="text" placeholder="Autor" name="name">
+                    <div class="col-5 d-flex justify-content-end">
+                        <label class=" me-2"> Fecha: </label>
+                        <input class="m-0" type="date" name="date">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <section>
+        <div class="ms-5 ps-5">
+            <button type="button" class="btn btn-primary" id="publishBtn">
+                Publish
+            </button>
+        </div>
+
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/postForm.js" type="module"></script>
+</body>
+</html>

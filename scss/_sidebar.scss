@@ -1,0 +1,70 @@
+/* Variables */
+$white: #fff;
+$gray64: rgb(64, 64, 64);
+$linkHover: rgb(47, 58, 178);
+$paddingInt: 12px 16px;
+
+/*Mixins*/
+@mixin cajasSidebar{
+   border-radius: 5px;
+   box-shadow: inset;
+}
+
+.sidebar {
+   flex: 2;
+   border: none;
+   padding: 0px;
+   
+   a{
+      text-decoration: none;
+      color: $gray64;
+   }
+   a:hover{
+      cursor: pointer;
+      color: $linkHover;
+   }
+   .container1{
+      @include cajasSidebar;
+      background-color: $white;
+      .listSidebar{
+         .firstPost{
+            padding: $paddingInt;
+            border-bottom: 1px solid rgba( 245, 245, 245, 1.0);
+            p{
+               font-size: 12px;
+            }
+         }
+         .postsList{
+            border: none;
+            .linkPrim{
+               padding: $paddingInt !important;
+               border-bottom: 1px solid rgba( 245, 245, 245, 1.0);
+               p{
+                  font-size: 14px;
+                  
+               }
+               div{
+                  font-size: 12px;
+               }
+            }
+         }
+      }    
+   }
+   .gap{
+      margin-top: 0.5rem;
+   }
+   .container2{
+      border-bottom: 1px solid rgb(230, 230, 230);
+      padding: 0 16px 16px 16px;
+      .title{
+         padding: $paddingInt;
+      }
+      .linkPrim{
+         padding: 12px 16px 12px 25px;
+         &:hover{
+            background-color: $white;
+            @include cajasSidebar;
+         }
+      }
+   }
+}

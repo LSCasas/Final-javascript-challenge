@@ -1,0 +1,121 @@
+.header {
+   height: 56px;
+   background-color: #fff;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+   z-index: 100;
+   position: sticky;
+   top: 0;
+   .header-container {
+      max-width: 1280px;
+      padding: 0 0.5rem;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 56px;
+   }
+}
+.site-logo {
+   max-width: 150px;
+   color: $base-100;
+   cursor: pointer;
+   .site-logo-img {
+      box-sizing: border-box;
+      max-width: 100%;
+      width: auto;
+      height: 40px;
+      object-fit: contain;
+      display: inline-block;
+      outline: 0;
+   }
+}
+.header-search {
+   max-width: 420px;
+   flex: 1 auto;
+   margin: 0 1rem;
+   display: none;
+   .fields {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      .field {
+         display: flex;
+         flex-flow: row;
+         font-size: 1rem;
+         position: relative;
+         align-items: center;
+         .textfield {
+            background-color: #fff;
+            border: 1.5px solid rgb(212, 212, 212);
+            color: rgb(23, 23, 23);
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: $border-radius-1;
+            line-height: 1.5;
+            padding: calc(0.5em - 1.5px) 0.5em;
+            font-family: inherit;
+            font-size: 1rem;
+            width: 100%;
+            resize: vertical;
+         }
+      }
+   }
+}
+.btn-icon {
+   display: flex;
+   position: absolute;
+   right: 0;
+   padding: 0.5rem;
+   font: inherit;
+   cursor: pointer;
+   border: none;
+   border-radius: $border-radius-1;
+   background-color: transparent;
+   overflow-wrap: normal;
+   &:hover {
+      background-color: rgba($blue-700, 0.1);
+      fill: $blue-700;
+   }
+}
+.link {
+   position: relative;
+   cursor: pointer;
+   max-width: 100%;
+   white-space: nowrap;
+   text-decoration: none;
+   border-radius: $border-radius-1;
+   &:hover {
+      text-decoration: underline;
+      background-color: rgba($blue-700, 0.1);
+      fill: $blue-700;
+   }
+}
+.link-block {
+   display: flex;
+   padding: 0.5rem 1rem;
+}
+.create-account {
+   padding: 0.5rem ;
+   color: rgba($blue-700, 1);
+   border: 1px solid rgba($blue-700, 1);
+   text-decoration: none;
+   border-radius: $border-radius-1;
+   &:hover {
+      text-decoration: underline;
+      color: white;
+      background-color: rgba($blue-700, 1);
+   }
+}
+.btn-hamburger {
+   background-color: transparent;
+   border: none;
+   border-radius: $border-radius-1;
+   padding: 0.5rem;
+   cursor: pointer;
+   &:hover {
+      background-color: rgba($blue-700, 0.1);
+   }
+}
+.position-relative {
+   position: relative;
+}
